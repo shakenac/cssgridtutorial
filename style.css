@@ -146,8 +146,17 @@ img {
 }
 
 
+/* Portfolio Section ------------- */
 
-
+.portfolio {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 20px;
+}
+.portfolio img {
+   width: 100%; /*imgs take up 100% of container*/
+   box-shadow: var(--shadow);
+}
 
 
 
