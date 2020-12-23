@@ -159,6 +159,58 @@ img {
 }
 
 
+/* Footer Section ------------- */
+footer {
+   margin-top: 2rem;
+   background: var(--dark);
+   color: var(--primary);
+   text-align: center;
+   padding: 1rem;
+}
+
+
+
+
+/* Media Queries --------------------- */
+
+@media(max-width: 700px) {
+   /* Nav */
+   .main-nav ul {
+      grid-template-columns: 1fr;
+   }
+   /* Top Container */
+   .top-container {
+      grid-template-areas:
+         'showcase showcase'
+         'top-box-a top-box-b';
+   }
+   /*Showcase section*/
+   .showcase h1 {
+      font-size: 2.5rem;
+   }
+   /* Info Section */
+   .info {
+      grid-template-columns: 1fr;
+   }
+   .info .btn {
+      display: block;
+      text-align: center;
+      margin: auto;
+   }
+}
+
+
+@media(max-width: 501px) {
+   /* Top Container */
+   .top-container {
+      grid-template-areas:
+         'showcase'
+         'top-box-a'
+         'top-box-b';
+   }
+}
+
+
 
 
 
